@@ -67,8 +67,9 @@ def find_relevant_verses(query, k=3):
 # -------------------
 @app.route("/")
 def home():
-    random_num = random.randint(1, 15)
-    image_file = f"images/{random_num}.jpg"
+    # random_num = random.randint(1, 15)
+    # image_file = f"images/{random_num}.jpg"
+    image_file = "images/1.jpg
     return render_template("index.html", image_file=image_file)
 
 @app.route("/ask-page")
